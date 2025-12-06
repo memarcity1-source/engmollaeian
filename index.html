@@ -1,25 +1,26 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>کانال مهندس مولاییان</title>
+    <title>تماس با مهندس مولاییان</title>
     <style>
         body {
             font-family: Tahoma, Arial, sans-serif;
             text-align: center;
             padding: 60px 20px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background: linear-gradient(135deg, #00c853, #007b3a);
             color: white;
             margin: 0;
         }
-        h1 { font-size: 24px; margin-bottom: 20px; }
+        .phone { font-size: 90px; margin: 20px 0; }
+        h1 { font-size: 26px; margin: 15px 0; }
         .loader {
-            border: 8px solid #f3f3f3;
-            border-top: 8px solid #ffffff;
+            border: 10px solid #f3f3f3;
+            border-top: 10px solid #ffffff;
             border-radius: 50%;
-            width: 60px;
-            height: 60px;
+            width: 70px;
+            height: 70px;
             animation: spin 1s linear infinite;
             margin: 30px auto;
         }
@@ -27,16 +28,27 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+        .backup { margin-top: 40px; font-size: 18px; }
     </style>
 </head>
 <body>
-    <h1>در حال انتقال به کانال مهندس مولاییان...</h1>
+    <div class="phone">اتصال...</div>
+    <h1>در حال اتصال به مهندس ملاییان</h1>
     <div class="loader"></div>
-    <p>یک لحظه صبر کنید</p>
+    <p>تماس صوتی/تصویری در تلگرام</p>
 
+    <!-- ریدایرکت مستقیم به آیدی تلگرامت -->
     <script>
-        // لینک کانال عمومی شما
-        window.location.href = "https://t.me/engmollaeian";
+        window.location.href = "https://t.me/eng_mollaeian";
     </script>
+
+    <!-- اگر تلگرام باز نشد، لینک پشتیبان -->
+    <noscript>
+        <div class="backup">
+            <p>اگر منتقل نشدید، یکی از راه‌های زیر را انتخاب کنید:</p>
+            <p><a href="https://t.me/eng_mollaeian" style="color:#fff; text-decoration:underline;">تماس در تلگرام @eng_mollaeian</a></p>
+            <p>یا تماس تلفنی: <a href="tel:09121237193" style="color:#fff;">0912-123-7193</a></p>
+        </div>
+    </noscript>
 </body>
 </html>

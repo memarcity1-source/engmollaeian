@@ -3,7 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تماس با دفتر مهندس مولاییان</title>
+    <title>تماس مستقیم با دفتر مهندس مولاییان</title>
+
+    <!-- پیش‌نمایش حرفه‌ای در تلگرام (حتماً این تگ‌ها رو داشته باشه) -->
+    <meta property="og:title" content="تماس مستقیم با دفتر مهندس مولاییان">
+    <meta property="og:description" content="تماس فوری: 021-44034903 | مشاوره و پشتیبانی تلفنی">
+    <meta property="og:image" content="https://engmollaeian.ir/call-preview.jpg">
+    <meta property="og:url" content="https://call.engmollaeian.ir">
+    <meta property="og:type" content="website">
+
+    <!-- مخصوص تلگرام (دکمه بزرگ "تماس مستقیم" نشون می‌ده) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="telegram:preview" content="large">
+
     <style>
         body {
             font-family: Tahoma, Arial, sans-serif;
@@ -13,44 +25,36 @@
             color: white;
             margin: 0;
         }
-        .phone { font-size: 100px; margin: 20px 0; }
+        .phone { font-size: 100px; margin: 30px 0; }
         h1 { font-size: 28px; margin: 15px 0; }
-        .number { font-size: 32px; font-weight: bold; direction: ltr; display: inline-block; }
-        .loader {
-            border: 10px solid #f3f3f3;
-            border-top: 10px solid #ffffff;
-            border-radius: 50%;
-            width: 70px;
-            height: 70px;
-            animation: spin 1s linear infinite;
+        .number { font-size: 36px; font-weight: bold; direction: ltr; display: block; margin: 20px; }
+        .btn {
+            background: #00c853;
+            color: white;
+            font-size: 28px;
+            padding: 20px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-block;
             margin: 30px auto;
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
         }
     </style>
 </head>
 <body>
-    <div class="phone">تماس...</div>
-    <h1>در حال تماس با دفتر</h1>
+
+    <div class="phone">تماس</div>
+    <h1>دفتر مرکزی مهندس مولاییان</h1>
     <p class="number">021-44034903</p>
-    <div class="loader"></div>
+    <p style="font-size:22px;">برای مشاوره و پشتیبانی فوری</p>
 
-    <!-- مستقیم زنگ زدن به تلفن ثابت -->
-    <script>
-        window.location.href = "tel:02144034903";
-        // یا به شکل بین‌المللی:
-        // window.location.href = "tel:+982144034903";
-    </script>
+    <!-- دکمه بزرگ و حرفه‌ای -->
+    <a href="tel:02144034903" class="btn">تماس مستقیم</a>
 
-    <!-- اگر مرورگر بلاک کرد، لینک پشتیبان -->
-    <noscript>
-        <p style="font-size:22px;">
-            <a href="tel:02144034903" style="color:white; text-decoration:underline;">
-                کلیک کنید: 021-44034903
-            </a>
-        </p>
-    </noscript>
+    <p style="margin-top:50px; font-size:18px;">
+        یا شماره‌گیری کنید:<br>
+        <b dir="ltr">021-44034903</b>
+    </p>
+
 </body>
 </html>
